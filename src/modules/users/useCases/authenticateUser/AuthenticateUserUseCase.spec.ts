@@ -7,7 +7,7 @@ let authenticateUserUseCase: AuthenticateUserUseCase;
 let usersRepositoryInMemory: InMemoryUsersRepository;
 let createUserUseCase: CreateUserUseCase;
 
-describe("Tests for authenticateUserUseCase", () => {
+describe("Tests for AuthenticateUserUseCase", () => {
   beforeEach(async () => {
     usersRepositoryInMemory = new InMemoryUsersRepository();
     authenticateUserUseCase = new AuthenticateUserUseCase(usersRepositoryInMemory);
